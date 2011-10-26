@@ -1,0 +1,12 @@
+<div data-role="page"> 
+	<div data-role="header">
+		<h1>ZendFramework2-MobileStarterkit</h1>
+	</div> 
+	<div data-role="content">
+	<?php
+		$form = new LoginForm();
+		$form->setAction('/user/login');
+		echo $form->render($this);
+	?>
+	</div>
+</div> 

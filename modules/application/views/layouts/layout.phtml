@@ -1,0 +1,16 @@
+<?php echo $this->doctype()->setDoctype('HTML5') ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset="utf-8" />
+    <?php echo $this->headTitle('MobileStarterKit') ?>
+	<?php echo $this->headLink()->appendStylesheet('http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css'); ?>
+	<?php 
+		echo $this->headScript()
+				  ->appendFile('http://code.jquery.com/jquery-1.6.4.min.js')
+				  ->appendFile('http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js');
+	?>
+</head>
+<body>
+<?php echo $this->raw('content'); ?>
+</body>
+</html>
